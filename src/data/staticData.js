@@ -2,7 +2,7 @@ import Ecommerce from '../assets/Ecommerce.png';
 import Portfolio from '../assets/Portfolio.png';
 import Financial from '../assets/Financial.png';
 import Vinay from '../assets/Vinay.png';
-//import Mani from '../assets/Mani.png';
+import Mani from '../assets/Mani.png';
 
 export const projects = [
   {
@@ -33,7 +33,7 @@ export const team = [
     id: 1,
     name: 'Alex Rivera',
     role: 'Lead Developer',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop'
+    avatar: Mani
   },
   {
     id: 2,
