@@ -1,21 +1,37 @@
 import { projects } from '../data/staticData';
 import Card from '../components/Card';
+// Import your asset here
+import Vinay from '../assets/Vinay.png'; 
 
 export default function Home() {
-  // Hardcoded technical stack badges based strictly on static component requirements
   const coreSkills = ['Vite', 'React.js', 'Tailwind CSS', 'JavaScript', 'Frontend Design'];
 
   return (
     <div className="animate-in fade-in duration-500 bg-slate-950 min-h-screen text-slate-100">
       
       {/* Hero Section */}
-      <section className="relative py-24 lg:py-24 overflow-hidden border-b border-slate-900">
-        {/* Subtle glowing ambient gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 via-indigo-500/5 to-transparent pointer-events-none" />
+      <section className="relative py-24 lg:py-32 overflow-hidden border-b border-slate-900">
+        
+        {/* 1. Founder Background Image Layer */}
+        <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden pointer-events-none select-none">
+          <div className="relative w-full h-full max-w-5xl opacity-15 mix-blend-screen">
+            <img 
+              src={Vinay} 
+              alt="Founder Background" 
+              className="w-full h-full object-cover object-center"
+            />
+            {/* Radial mask to smoothly fade edges into the background color */}
+            <div className="absolute inset-0 bg-radial from-transparent via-slate-950/50 to-slate-950" />
+          </div>
+        </div>
+
+        {/* 2. Ambient Glow Blurs (Layered over/under image) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 via-indigo-500/5 to-transparent pointer-events-none z-0" />
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-[10%] right-[-10%] w-[500px] h-[500px] bg-indigo-500/5 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        {/* 3. Content Layer (Forced to relative z-10 so it sits crisp on top) */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             {/* Project Status Badge */}
             <span className="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium text-blue-400 bg-blue-500/10 rounded-full mb-6 border border-blue-500/20">
@@ -23,11 +39,11 @@ export default function Home() {
               Premium Portfolio Template
             </span>
 
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white mb-6 leading-tight drop-shadow-sm">
               Build Faster with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">Vinay Porandela</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed drop-shadow">
               A premium, dark-themed static website template built with Vite, React, and Tailwind CSS. Showcase your projects beautifully and effortlessly.
             </p>
 
@@ -36,7 +52,7 @@ export default function Home() {
               {coreSkills.map((skill) => (
                 <span 
                   key={skill} 
-                  className="px-3 py-1.5 text-sm bg-slate-900 border border-slate-800 rounded-md font-mono text-slate-300 shadow-sm"
+                  className="px-3 py-1.5 text-sm bg-slate-900/80 backdrop-blur-sm border border-slate-800 rounded-md font-mono text-slate-300 shadow-sm"
                 >
                   {skill}
                 </span>
@@ -48,7 +64,7 @@ export default function Home() {
               <button className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20">
                 Get Started
               </button>
-              <button className="w-full sm:w-auto px-6 py-3 bg-slate-900 border border-slate-800 text-slate-200 font-medium rounded-md hover:bg-slate-800 transition-colors">
+              <button className="w-full sm:w-auto px-6 py-3 bg-slate-900/80 backdrop-blur-sm border border-slate-800 text-slate-200 font-medium rounded-md hover:bg-slate-800 transition-colors">
                 View Source
               </button>
             </div>
