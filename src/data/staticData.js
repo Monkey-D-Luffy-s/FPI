@@ -31,13 +31,13 @@ export const projects = [
 export const team = [
   {
     id: 1,
-    name: 'Alex Rivera',
+    name: 'Manikanta',
     role: 'Lead Developer',
     avatar: Mani
   },
   {
     id: 2,
-    name: 'Sam Smith',
+    name: 'Vinay',
     role: 'UI/UX Designer',
     avatar: Vinay
   }
