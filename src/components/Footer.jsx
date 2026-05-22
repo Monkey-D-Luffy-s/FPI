@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex justify-center items-center">
           <p className="text-slate-400 text-sm">
-            &copy; {new Date().getFullYear()} Nexus Inc. All rights reserved. Built with Vite, React & Tailwind CSS.
+            &copy; {new Date().getFullYear()} Nexus Inc. All rights reserved. Built with Vite, React & Tailwind CSS. Founder Viany Porandela
           </p>
         </div>
       </div>
