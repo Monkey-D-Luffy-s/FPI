@@ -10,7 +10,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
-              Build Faster with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Nexus</span>
+              Build Faster with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Vinay Porandela</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-400 mb-10">
               A premium, dark-themed static website template built with Vite, React, and Tailwind CSS.
