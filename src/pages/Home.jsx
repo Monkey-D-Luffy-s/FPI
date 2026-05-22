@@ -13,18 +13,17 @@ export default function Home() {
       <section className="relative py-24 lg:py-32 overflow-hidden border-b border-slate-900">
         
         {/* 1. Founder Background Image Layer */}
-      <div className="absolute inset-0 z-0 flex items-start justify-center overflow-hidden pointer-events-none select-none">
-  <div className="relative w-full h-full max-w-5xl opacity-15 mix-blend-screen">
-    <img 
-      src={Vinay} 
-      alt="Founder Background" 
-      {/* Changed object-center to object-top */}
-      className="w-full  object-cover object-top" 
-    />
-    {/* Radial mask to smoothly fade edges into the background color */}
-    <div className="absolute inset-0 bg-radial from-transparent via-slate-950/50 to-slate-950" />
-  </div>
-</div>
+     <div className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden pointer-events-none select-none">
+          <div className="relative w-full h-full max-w-5xl opacity-15 mix-blend-screen">
+            <img 
+              src={Vinay} 
+              alt="Founder Background" 
+              className="w-full object-cover object-center"
+            />
+            {/* Radial mask to smoothly fade edges into the background color */}
+            <div className="absolute inset-0 bg-radial from-transparent via-slate-950/50 to-slate-950" />
+          </div>
+        </div>
 
         {/* 2. Ambient Glow Blurs (Layered over/under image) */}
         <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 via-indigo-500/5 to-transparent pointer-events-none z-0" />
