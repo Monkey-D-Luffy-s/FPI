@@ -1,4 +1,6 @@
 import Ecommerce from '../assets/Ecommerce.png';
+import Portfolio from '../assets/Portfolio.png';
+import Financial from '../assets/Financial.png';
 
 export const projects = [
   {
@@ -12,14 +14,14 @@ export const projects = [
     id: 2,
     title: 'Financial Dashboard',
     description: 'Real-time analytics and beautiful charts for tracking financial metrics.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop',
+    image: Financial,
     tags: ['React Router', 'Recharts']
   },
   {
     id: 3,
     title: 'Portfolio Website',
     description: 'A sleek, dark-themed personal portfolio showcasing creative work.',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000&auto=format&fit=crop',
+    image: Portfolio,
     tags: ['Tailwind', 'Framer Motion']
   }
 ];
