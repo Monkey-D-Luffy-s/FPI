@@ -1,9 +1,11 @@
+import Ecommerce from '../assets/Ecommerce.png';
+
 export const projects = [
   {
     id: 1,
     title: 'E-Commerce Platform',
     description: 'A modern shopping experience with lightning-fast search and smooth checkout.',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2000&auto=format&fit=crop',
+    image: Ecommerce,
     tags: ['React', 'Tailwind', 'Vite']
   },
   {
