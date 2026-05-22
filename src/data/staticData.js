@@ -1,6 +1,8 @@
 import Ecommerce from '../assets/Ecommerce.png';
 import Portfolio from '../assets/Portfolio.png';
 import Financial from '../assets/Financial.png';
+import Vinay from '../assets/Vinay.png';
+//import Mani from '../assets/Mani.png';
 
 export const projects = [
   {
@@ -37,6 +39,6 @@ export const team = [
     id: 2,
     name: 'Sam Smith',
     role: 'UI/UX Designer',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop'
+    avatar: Vinay
   }
 ];
