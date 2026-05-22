@@ -19,7 +19,7 @@ export default function Home() {
       src={Vinay} 
       alt="Founder Background" 
       {/* Changed object-center to object-top */}
-      className="w-full h-full object-cover object-top" 
+      className="w-full  object-cover object-top" 
     />
     {/* Radial mask to smoothly fade edges into the background color */}
     <div className="absolute inset-0 bg-radial from-transparent via-slate-950/50 to-slate-950" />
