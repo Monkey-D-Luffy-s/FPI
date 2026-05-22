@@ -9,7 +9,7 @@ export default function Home() {
     <div className="animate-in fade-in duration-500 bg-slate-950 min-h-screen text-slate-100">
       
       {/* Hero Section */}
-      <section className="relative py-24 lg:py-36 overflow-hidden border-b border-slate-900">
+      <section className="relative py-24 lg:py-24 overflow-hidden border-b border-slate-900">
         {/* Subtle glowing ambient gradient background */}
         <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 via-indigo-500/5 to-transparent pointer-events-none" />
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -57,7 +57,7 @@ export default function Home() {
       </section>
 
       {/* Projects / Featured Work Section */}
-      <section className="py-24 bg-slate-950">
+      <section className="py-14 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16 flex flex-col items-center text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Work</h2>
